@@ -15,7 +15,7 @@ function Cards (props) {
 }
 
 Cards.propsTypes ={
-    backgroundColor: propsTypes.string.isRequired,
+    backgroundColor: propsTypes.oneOf(['red', 'green', 'blue', 'purple']).isRequired,
     height: propsTypes.number.isRequired,
     width: propsTypes.number
 
@@ -23,7 +23,6 @@ Cards.propsTypes ={
 
 
 Cards.defaultProps = {
-    cardColor: 'blue',
     height: 100,
     width:100
 }
