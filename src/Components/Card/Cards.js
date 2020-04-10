@@ -1,14 +1,13 @@
 import React from 'react'
 
 function Cards (props) {
-    const style = {
+    const styles = {
         backgroundColor: props.cardColor,
-        hight: 100,
+        height: 100,
         width: 100
     }
-
     return(
-        <div style={style}></div>
+        <div style={styles}></div>
     )
 }
 
