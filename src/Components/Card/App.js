@@ -4,8 +4,8 @@ import Card from './Cards'
 function App () {
     return (
         <div>
-            <Card cardColor="red" />
-            <Card cardColor="yellow" />
+            <Card cardColor="red" height={200} width={200} />
+            <Card />
             <Card cardColor="green" />
         </div>
 
