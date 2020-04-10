@@ -7,6 +7,15 @@ class NewJSFeatures extends Component {
         this.state = {
             count : 0
         }
+        this.increment = this.increment.bind(this)
+
+    }
+    increment() {
+        this.setState(prevState => {
+            return {
+                count: prevState.count + 1
+            }
+        })
     }
 
     render() {
