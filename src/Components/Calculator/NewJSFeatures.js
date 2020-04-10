@@ -1,16 +1,13 @@
 import React, {Component} from "react"
 
 class NewJSFeatures extends Component {
-    constructor() {
-        super()
-        this.state = {
-            count: 0
+   state = {
+            count: 0,
+            greating: "Hi",
+            age: 24
         }
-        this.increment = this.increment.bind(this)
-        this.decrement = this.decrement.bind(this)
-    }
-    
-    increment() {
+
+    increment = () => {
         this.setState(prevState => {
             return {
                 count: prevState.count + 1
@@ -18,7 +15,7 @@ class NewJSFeatures extends Component {
         })
     }
     
-    decrement() {
+    decrement = () => {
         this.setState(prevState => {
             return {
                 count: prevState.count - 1
@@ -27,9 +24,10 @@ class NewJSFeatures extends Component {
     }
     
     render() {
+        const {count, greating, age} = this.state
         return (
             <div>
-                <h1>{this.state.count}</h1>
+                <h1>{count} {greating} {age}</h1>
                 <button onClick={this.increment}>+</button>
                 <button onClick={this.decrement}>-</button>
             </div>
