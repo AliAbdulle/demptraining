@@ -1,13 +1,19 @@
 import React from 'react'
-import infoCallout from './InfoCallout'
-import ImagCallout from './ImageCallout'
+import InfoCallout from './InfoCallout'
 import EmailCallout from './EmailCallout'
+import ImagCallout from './ImageCallout'
 
 function App(){
     return (
         <main>
             <h1>Welcome!</h1>
-            <infoCallout />
+            <InfoCallout 
+                header="Don't miss out!"
+                body="Unless you don't suffer from FOMO, you better make sure you fill out 
+                the email form below!"   
+            />
+             <p>This is probably the best site you've ever come across. I'm glad you're here 
+                 to witness the magnificence of this website right now.</p>
             <ImagCallout 
                 img={"https://picsum.photos/id/102/4320/3240"}
                 caption="Just look at those sparkling raspberries!"
@@ -19,3 +25,5 @@ function App(){
         </main>
     )
 }
+
+export default App
