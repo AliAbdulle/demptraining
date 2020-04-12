@@ -13,7 +13,7 @@ function Cards (props) {
     )
 
 }
-
+//Learning propsTypes
 Cards.propsTypes ={
     backgroundColor: propsTypes.oneOf(['red', 'green', 'blue', 'purple']).isRequired,
     height: propsTypes.number.isRequired,
