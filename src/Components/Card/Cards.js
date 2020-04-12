@@ -21,7 +21,7 @@ Cards.propsTypes ={
 
 }
 
-
+//DefualtProps feeds
 Cards.defaultProps = {
     height: 100,
     width:100
