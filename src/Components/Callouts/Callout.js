@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Myinfro(props) {
+function Callout(props) {
     return (
 
         <div className="callout">
@@ -9,4 +9,4 @@ function Myinfro(props) {
     )
 
 }
-export default Myinfro
+export default Callout
