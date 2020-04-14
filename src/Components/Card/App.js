@@ -1,6 +1,6 @@
 import React from 'react'
 import Card from './Cards'
-
+//three different cards
 function App () {
     return (
         <div>
