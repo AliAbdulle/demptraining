@@ -1,7 +1,7 @@
 import React from 'react'
 
 
-export function withPointlessHOC (component) {
+export function withExtraPropAdded (component) {
     const Component = component
     return function(props){
         return (
