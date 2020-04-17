@@ -1,6 +1,6 @@
 import React from 'react'
-import {withPointlessHOC} from './withPointlessHOC'
-import {withExtraPropAdded } from './withExtraPropAdded'
+import {withPointlessHOC} from './Menu'
+import {withExtraPropAdded } from './Favorite'
 function App () {
     return (
         <div>Hello World</div>
