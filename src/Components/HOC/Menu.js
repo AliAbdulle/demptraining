@@ -2,15 +2,24 @@ import React from 'react'
 
 class Menu extends React.Component {
     state ={
-        isFavorited: false
+        show: true
     }
     toggleFavorite = () => {
         this.setState(prevState => {
         return {
-            isFavorited: !prevState.isFavorited
+            show: !prevState.show   
         }
     })
 }
+
+render () {
+    return (
+        <div>
+            
+        </div>
+    )
+}
+
 
 }
 export default Menu
