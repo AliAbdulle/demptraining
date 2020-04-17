@@ -7,7 +7,7 @@ class Menu extends React.Component {
     toggleFavorite = () => {
         this.setState(prevState => {
         return {
-            show: !prevState.show   
+            show: !prevState.show
         }
     })
 }

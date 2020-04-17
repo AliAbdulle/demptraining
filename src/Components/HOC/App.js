@@ -1,11 +1,14 @@
 import React from 'react'
-import {withPointlessHOC} from './Menu'
-import {withExtraPropAdded } from './Favorite'
+import {Menu} from './Menu'
+import {Favorite } from './Favorite'
 function App () {
     return (
-        <div>Hello World</div>
+        <div>
+            <Menu />
+            <hr />
+            <Favorite />
+        </div>
     )
 }
 
-const PointlessHOC = withExtraPropAdded(App)
-export default PointlessHOC
+export default App
