@@ -15,7 +15,7 @@ class Menu extends React.Component {
 render () {
     return (
         <div>
-            
+            <button onClick={this.state.show}>{this.state.show ? "hide" : "show"} Menu</button>
         </div>
     )
 }
