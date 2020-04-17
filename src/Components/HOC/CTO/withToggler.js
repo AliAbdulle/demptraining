@@ -13,7 +13,9 @@ class withToggler extends Component {
         })
     }
     render() { 
-        return (  );
+        return (
+            <Component on={this.state.on} toggle={this.toggle} {...props} />
+         );
     }
 }
  
