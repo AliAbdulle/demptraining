@@ -24,7 +24,7 @@ class withToggler extends Component {
 export function withToggler(component, optionObj) {
     return function (props) {
         return (
-            <Toggle component={component} defaultOnValue={optionObj.defaultOnValue} {...props}
+            <Toggle component={component} defaultOnValue={optionObj.defaultOnValue} {...props} />
         )
     }
 }
