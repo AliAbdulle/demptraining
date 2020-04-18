@@ -1,4 +1,5 @@
 import React from 'react'
+import { withToggler } from './CTO/withToggler'
 
 class Menu extends React.Component {
     state ={
@@ -29,4 +30,4 @@ render () {
 
 
 }
-export default Menu
+export default withToggler(Menu, {defaultOnValue: true})

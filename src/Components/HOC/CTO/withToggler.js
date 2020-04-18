@@ -1,7 +1,7 @@
-import React from 'react'
+import React, { Component} from 'react'
 
 
-class withToggler extends Component {
+class Toggler extends Component {
     state = {
         on: this.props.defaultOnValue
     }
@@ -24,7 +24,7 @@ class withToggler extends Component {
 export function withToggler(component, optionObj) {
     return function (props) {
         return (
-            <Toggle component={component} defaultOnValue={optionObj.defaultOnValue} {...props} />
+            <Toggler component={component} defaultOnValue={optionObj.defaultOnValue} {...props} />
         )
     }
 }

@@ -1,5 +1,5 @@
 import React from 'react'
-import withToggler from './CTO/withToggler'
+import {withToggler} from './CTO/withToggler'
 
 function Favorite(props) {
     return (
