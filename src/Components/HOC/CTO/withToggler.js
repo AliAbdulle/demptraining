@@ -2,7 +2,7 @@ import React from 'react'
 
 
 class withToggler extends Component {
-    state = { 
+    state = {
         on: this.props.defaultOnValue
     }
     toggle = () => {
@@ -12,11 +12,19 @@ class withToggler extends Component {
             }
         })
     }
-    render() { 
+    render() {
+        const Component = this.props.component
+        const {component: C, defaultOnValue, props} = this.props
         return (
-            <Component on={this.state.on} toggle={this.toggle} {...props} />
+            <C on={this.state.on} toggle={this.toggle} {...props} />
          );
     }
 }
- 
-export default withToggler;
+
+export function withToggler(component, optionObj) {
+    return function (props) {
+        return (
+            <Toggle component={component} defaultOnValue={optionObj.defaultOnValue} {...props}
+        )
+    }
+}
