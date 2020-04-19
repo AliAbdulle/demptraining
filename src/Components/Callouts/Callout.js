@@ -5,6 +5,7 @@ function Callout(props) {
 //children props
         <div className="callout">
             {props.children}
+            {props.name}
         </div>
     )
 
