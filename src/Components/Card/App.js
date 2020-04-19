@@ -7,6 +7,7 @@ function App () {
             <Card cardColor="red" height={200} width={200} />
             <Card cardColor='purple' />
             <Card cardColor="green" />
+            <Card cardColor="Blue" />
         </div>
 
     )
