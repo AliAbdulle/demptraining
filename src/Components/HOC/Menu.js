@@ -12,7 +12,7 @@ class Menu extends React.Component {
         }
     })
 }
-
+//Render function display 
 render () {
     return (
         <div>
