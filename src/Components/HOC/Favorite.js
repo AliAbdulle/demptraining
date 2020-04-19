@@ -15,5 +15,6 @@ function Favorite(props) {
         </div>
     ) 
 }
+//Higher Order Components
 const superchargedFavoriteComponent = withToggler(Favorite, {defaultOnValue: false})
 export default superchargedFavoriteComponent
