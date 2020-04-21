@@ -23,6 +23,7 @@ render () {
                     <p>Your Repositories</p>
                     <p>Your Stars</p>
                     <p>Your Gists</p>
+                    <p>Sport section</p>
             </nav>
         </div>
     )
