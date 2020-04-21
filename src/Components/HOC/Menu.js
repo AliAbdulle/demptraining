@@ -31,4 +31,4 @@ render () {
 
 
 }
-export default withToggler(Menu, {defaultOnValue: true})
+export default Menu
