@@ -1,5 +1,5 @@
 import React from 'react'
-import { withToggler } from './CTO/withToggler'
+import { withToggler } from './withToggler'
 
 class Menu extends React.Component {
     state ={

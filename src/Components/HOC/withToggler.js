@@ -1,11 +1,11 @@
 import React, { Component} from 'react'
 
 
-class Toggler extends Component {
+class withToggler extends Component {
     state = {
         on: this.props.defaultOnValue
     }
-    toggle = () => {
+    withToggler = () => {
         this.setState(prevState => {
             return {
                 on: !prevState.on
