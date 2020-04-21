@@ -13,17 +13,12 @@ class withToggler extends Component {
         })
     }
     render() {
-        const {component: C, defaultOnValue, ...props} = this.props
         return (
-            <C on={this.state.on} toggle={this.toggle} {...props} />
+            <div>
+                    {this.props.render=(this.state.on, this.withToggler)}
+            </div>
          );
     }
 }
 
-export function withToggler(component, optionObj) {
-    return function (props) {
-        return (
-            <Toggler component={component} defaultOnValue={optionObj.defaultOnValue} {...props} />
-        )
-    }
-}
+export default withToggler
