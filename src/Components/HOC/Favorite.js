@@ -1,20 +1,29 @@
 import React from 'react'
-import {withToggler} from './CTO/withToggler'
+import withToggler from './CTO/withToggler'
+import { render } from '@testing-library/react'
 
 function Favorite(props) {
     return (
-        <div>
-            <h3>Click heart to favorite</h3>
-            <h1>
-                <span
-                    onClick={props.toggle}
-                >
-                    {props.on ? "❤️" : "♡"}
-                </span>
-            </h1>
-        </div>
-    ) 
+        <withToggler render={
+            function () {
+                return (
+
+
+            <div>
+                <h3>Click heart to favorite</h3>
+                <h1>
+                    <span
+                        onClick={props.toggle}
+                    >
+                        {props.on ? "❤️" : "♡"}
+                    </span>
+                </h1>
+            </div>
+                )
+            }
+        } />
+    )
 }
 //Higher Order Components
-const superchargedFavoriteComponent = withToggler(Favorite, {defaultOnValue: false})
-export default superchargedFavoriteComponent
+
+export default Favorite
