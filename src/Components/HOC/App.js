@@ -4,7 +4,6 @@ import Favorite  from './Favorite'
 function App () {
     return (
         <div>
-            {/* <Menu /> */}
             <hr />
             <Favorite />
         </div>

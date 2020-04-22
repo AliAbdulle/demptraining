@@ -4,7 +4,7 @@ import withToggler from './withToggler'
 function Favorite(props) {
     return (
         <withToggler render={
-            function (on, toggle) {
+         (on, toggle) => {
                 return (
                     <div>
                         <h3>Click heart to favorite</h3>

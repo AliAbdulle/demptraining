@@ -5,7 +5,7 @@ class withToggler extends Component {
     state = {
         on: this.props.defaultOnValue
     }
-    withToggler = () => {
+    toggle = () => {
         this.setState(prevState => {
             return {
                 on: !prevState.on
@@ -15,7 +15,7 @@ class withToggler extends Component {
     render() {
         return (
             <div>
-                    {this.props.render=(this.state.on, this.withToggler)}
+                    {this.props.render=(this.state.on, this.toggle)}
             </div>
          );
     }
