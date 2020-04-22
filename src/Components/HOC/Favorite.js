@@ -1,25 +1,19 @@
-import React from 'react'
-import withToggler from './withToggler'
+import React from "react";
+import withToggler from "./withToggler";
 
 function Favorite(props) {
-    return (
-        <withToggler render={
-            (on, toggle) => {
-                return (
-                    <div>
-                        <h3>Click heart to favorite</h3>
-                        <h1>
-                            <span 
-                                onClick={toggle}
-                            >
-                                {on ? "❤️" : "♡"}
-                            </span>
-                        </h1>
-                    </div>
-                )
-            }
-        }/>
-    ) 
+  return (
+    <withToggler
+      render={(on, toggle) => (
+        <div>
+          <h3>Click heart to favorite</h3>
+          <h1>
+            <span onClick={toggle}>{on ? "❤️" : "♡"}</span>
+          </h1>
+        </div>
+      )}
+    />
+  );
 }
 
-export default Favorite
+export default Favorite;

@@ -15,7 +15,7 @@ class withToggler extends Component {
     render() {
         return (
             <div>
-                    {this.props.render=(this.state.on, this.toggle)}
+                {this.props.render=(this.state.on, this.toggle)}
             </div>
          );
     }
