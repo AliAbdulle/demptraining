@@ -4,12 +4,12 @@ import withToggler from './withToggler'
 function Favorite(props) {
     return (
         <withToggler render={
-         (on, toggle) => {
+            (on, toggle) => {
                 return (
                     <div>
                         <h3>Click heart to favorite</h3>
                         <h1>
-                            <span
+                            <span 
                                 onClick={toggle}
                             >
                                 {on ? "❤️" : "♡"}
@@ -18,9 +18,8 @@ function Favorite(props) {
                     </div>
                 )
             }
-        } />
-    )
+        }/>
+    ) 
 }
-//Higher Order Components
 
 export default Favorite
