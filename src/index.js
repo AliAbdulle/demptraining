@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './Components/HOC/App'
+import App from './Components/Data/App'
 
 
 
