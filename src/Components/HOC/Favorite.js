@@ -1,10 +1,11 @@
 import React from "react";
-import withToggler from "./withToggler";
+import Toggler from './Toggler'
 
 function Favorite(props) {
   return (
-    <withToggler
-      render={(on, toggle) => (
+    <Toggler defaultOnValue={true}
+      render={
+          (on, toggle) => (
         <div>
           <h3>Click heart to favorite</h3>
           <h1>

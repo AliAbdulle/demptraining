@@ -1,7 +1,7 @@
 import React, { Component} from 'react'
 
 
-class withToggler extends Component {
+class Toggler extends Component {
     state = {
         on: this.props.defaultOnValue
     }
@@ -15,10 +15,10 @@ class withToggler extends Component {
     render() {
         return (
             <div>
-                {this.props.render=(this.state.on, this.toggle)}
+                {this.props.render(this.state.on, this.toggle)}
             </div>
          );
     }
 }
 
-export default withToggler
+export default Toggler
