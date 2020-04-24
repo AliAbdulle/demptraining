@@ -3,9 +3,18 @@ import DataFatcher from './DataFetcher'
 
 function App() {
     return(
-        <DataFatcher url='https://swapi.co/api/people/1'>
+        <div>
+            <DataFatcher url='https://swapi.co/api/people/1'>
+                {(data, loading) => {
+                    return (
+                        loading ?
+                        <h1>Loading...</h1> :
+                        <p>{JSON.stringify(data)}</p>
+                    )
+                }}
 
-        </DataFatcher>
+            </DataFatcher>
+        </div>
     )
 
 }
