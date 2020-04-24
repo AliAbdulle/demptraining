@@ -1,4 +1,4 @@
-import React, {Component} from 'react'
+import React, {Component} from "react"
 
 class DataFetcher extends Component {
     state = {
@@ -14,8 +14,9 @@ class DataFetcher extends Component {
     }
 
     render() {
+        const {data, loading} = this.state
         return(
-            this.props.children(this.state.data, this.state.loading)
+            this.props.children({data, loading})
         )
     }
 

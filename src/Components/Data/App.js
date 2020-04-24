@@ -1,10 +1,10 @@
 import React from 'react'
-import DataFatcher from './DataFetcher'
+import DataFetcher from './DataFetcher'
 
 function App() {
     return(
         <div>
-            <DataFatcher url='https://swapi.co/api/people/1'>
+            <DataFetcher url="https://swapi.co/api/people/1">
                 {(data, loading) => {
                     return (
                         loading ?
@@ -13,7 +13,7 @@ function App() {
                     )
                 }}
 
-            </DataFatcher>
+            </DataFetcher>
         </div>
     )
 
