@@ -1,12 +1,14 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './Components/Context/App'
-
-
-import * as serviceWorker from './serviceWorker';
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./Components/Context/App";
+import ThemeContext from "./Components/Context/ThemeContext";
 
 
 ReactDOM.render(
-<App />, document.getElementById('root'));
+  <ThemeContext.Provider value={"light"}>
+    <App />
+  </ThemeContext.Provider>,
+  document.getElementById("root")
+);
 
-serviceWorker.unregister();
+
