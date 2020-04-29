@@ -1,15 +1,15 @@
-import React from 'react';
+import React from 'react'
 
-import Button from './Button';
-import Header from './Header';
+import Header from "./Header"
+import Button from "./Button"
 
-function App (){
+function App() {
     return (
         <div>
             <Header />
             <Button />
         </div>
-
-    );
+    )
 }
+
 export default App

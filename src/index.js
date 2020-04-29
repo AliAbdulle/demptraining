@@ -5,7 +5,7 @@ import ThemeContext from "./Components/Context/ThemeContext";
 
 
 ReactDOM.render(
-  <ThemeContext.Provider value={"light"}>
+  <ThemeContext.Provider value={"dark"}>
     <App />
   </ThemeContext.Provider>,
   document.getElementById("root")
