@@ -1,10 +1,12 @@
 import React from 'react';
 import Button from './Button';
 function App (){
-render() {
     return (
-         <Button />
+        <div>
+
+            <Button />
+        </div>
+
     );
-}
 }
 export default App
