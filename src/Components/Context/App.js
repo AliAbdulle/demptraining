@@ -14,7 +14,7 @@ function App() {
             <Button  theme={theme}/>
                 )}
             </ThemeContext.Consumer>
-            <Button />
+            <Button theme="light" />
         </div>
     )
 }

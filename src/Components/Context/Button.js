@@ -1,4 +1,5 @@
 import React from "react"
+import propTypes from 'prop-types'
 import ThemeContext from "./ThemeContext"
 
 function Button(props) {
@@ -12,7 +13,12 @@ function Button(props) {
         
         )
 }
+Button.propTypes = {
+    theme: propTypes.oneOf(["light", "dark"])
+}
 
-Button.contextType = ThemeContext
+Button.defualtProps = {
+    theme: "light"
+}
 
 export default Button
