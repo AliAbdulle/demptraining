@@ -1,7 +1,7 @@
 import React from "react"
 import ThemeContext from "./ThemeContext"
 
-function Button() {
+function Button(props) {
         return (
             <ThemeContext.Consumer>
                 {theme =>(
