@@ -4,13 +4,8 @@ import ThemeContext from "./ThemeContext"
 
 function Button(props) {
         return (
-            <ThemeContext.Consumer>
-                {theme =>(
+            <button className={`${props.theme}-theme`}>Switch Theme</button>
 
-            <button className={`${theme}-theme`}>Switch Theme</button>
-                )}
-            </ThemeContext.Consumer>
-        
         )
 }
 Button.propTypes = {
