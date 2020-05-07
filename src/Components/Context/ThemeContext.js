@@ -3,7 +3,7 @@ const {Provider, Consumer} = React.createContext()
 
 class ThemeContextProvider extends Component {
     state = {
-        theme: 'dark'
+        theme: 'light'
     }
 
     toggleTheme = () => {
@@ -15,7 +15,7 @@ class ThemeContextProvider extends Component {
     }
     render() {
         return (
-            <Provider value={this.state.theme}>
+            <Provider value={{them: this.state.theme, toggleTheme: this.toggleTheme}}>
                 {this.props.children}
             </Provider>
         )
