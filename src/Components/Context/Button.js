@@ -6,7 +6,7 @@ function Button(props) {
         return (
             <ThemeContextConsumer>
                 {theme =>(
-                    <button className={`${props.theme}-theme`}>Switch Theme</button>
+                    <button className={`${theme}-theme`}>Switch Theme</button>
                 )}
             </ThemeContextConsumer>
 
