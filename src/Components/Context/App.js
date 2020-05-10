@@ -6,6 +6,7 @@ import Button from "./Button"
 
 function App() {
     return (
+        //Header and buttom for the page
         <div>
             <Header />
             <Button />
