@@ -1,6 +1,6 @@
 import React from "react";
 import { ThemeContextConsumer } from "./ThemeContext";
-
+//functional  components
 function Header() {
   return (
     <ThemeContextConsumer>
