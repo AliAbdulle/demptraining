@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import App from "./Components/HookState/App";
+import App from "./Components/Timer/App";
 //import {ThemeContextProvider} from "./Components/Context/ThemeContext";
 
 
