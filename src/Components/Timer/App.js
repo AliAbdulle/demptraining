@@ -11,7 +11,7 @@ function App(){
     function calculateWordCount(text) {
         const wordArr = text.trim().split(" ")
         console.log(wordArr)
-        return wordArr.lenght
+        return wordArr.filter(word => word !== " ").length
     }
     return (
         <div>
