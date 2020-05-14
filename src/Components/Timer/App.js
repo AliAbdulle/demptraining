@@ -16,6 +16,15 @@ function App(){
         console.log(wordArr)
         return wordArr.filter(word => word !== " ").length
     }
+    function startGame() {
+        setIsTimeRunning(true)
+        setTimeRemaining(5)
+        setText("")
+    }
+    function endGame() {
+        setIsTimeRunning(false)
+        setWordCount(calculateWordCount(text))
+    }
 
     useEffect(() => {
         if(isTimeRunning && timeRemaining > 0) {
@@ -23,8 +32,7 @@ function App(){
             setTimeRemaining(time => time -1)
         }, 1000);
     }else if(timeRemaining === 0) {
-        setTimeRemaining(false)
-        setWordCount(calculateWordCount(text))
+        endGame()
     }
     }, [timeRemaining, isTimeRunning])
     return (
@@ -35,7 +43,7 @@ function App(){
                 value={text}
             />
             <h4>Time remaining: {timeRemaining}</h4>
-            <button onClick={()=>setIsTimeRunning(true)}>Start</button>
+            <button onClick={startGame}>Start</button>
             <h1>Word count: {wordCount}</h1>
         </div>
     )
